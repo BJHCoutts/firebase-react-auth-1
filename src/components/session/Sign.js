@@ -64,16 +64,16 @@ class Sign extends React.Component {
         return <div className="App-header">
             <form>
                 <h2>Sign Up</h2>
-                <input type="email" name="email" onInput={this.onInput} /> <br />
-                <input type="password" name="password" onInput={this.onInput} /> <br />
+                <input placeholder="email" type="email" name="email" onInput={this.onInput} /> <br />
+                <input placeholder="password" type="password" name="password" onInput={this.onInput} /> <br />
                 <input type="submit" value="Sign Up" onClick={this.onSignUp}/>
                 {error && <h4 style={{color: 'red'}}>{this.state.error}</h4>}
             </form>
 
             <form>
                 <h2>Sign In</h2>
-                <input type="email" name="email" onInput={this.onInput} /> <br />
-                <input type="password" name="password" onInput={this.onInput} /> <br />
+                <input placeholder="email" type="email" name="email" onInput={this.onInput} /> <br />
+                <input placeholder="password" type="password" name="password" onInput={this.onInput} /> <br />
                 <input type="submit" value="Sign In" onClick={this.onSignIn}/>
                 {error && <h4 style={{color: 'red'}}>{this.state.error}</h4>}
             </form>
