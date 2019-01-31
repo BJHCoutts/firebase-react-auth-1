@@ -1,5 +1,7 @@
 import firebase from 'firebase'
 import React from 'react';
+import '../../App.css';
+
 
 class SignUp extends React.Component {
     state = {}
@@ -23,7 +25,7 @@ class SignUp extends React.Component {
 
     render() {
         const { error } = this.state
-        return <React.Fragment>
+        return <div className="App-header">
             <form>
                 <h2>Sign Up</h2>
                 <input type="email" name="email" onInput={this.onInput} /> <br />
@@ -31,7 +33,7 @@ class SignUp extends React.Component {
                 <input type="submit" value="Sign Up" onClick={this.onSignUp}/>
                 {error && <h4 style={{color: 'red'}}>{this.state.error}</h4>}
             </form>
-        </React.Fragment>
+        </div>
     }
 }
 
