@@ -1,7 +1,6 @@
 import firebase from 'firebase'
 import React from 'react';
 
-
 class SignUp extends React.Component {
     state = {}
 
@@ -26,7 +25,7 @@ class SignUp extends React.Component {
         const { error } = this.state
         return <React.Fragment>
             <form>
-                <h2>Sign up</h2>
+                <h2>Sign Up</h2>
                 <input type="email" name="email" onInput={this.onInput} /> <br />
                 <input type="password" name="password" onInput={this.onInput} /> <br />
                 <input type="submit" value="Sign Up" onClick={this.onSignUp}/>

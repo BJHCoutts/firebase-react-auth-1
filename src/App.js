@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import './App.css';
-import SignUp from './components/session/SignUp';
+import LandingPage from './pages/LandingPage/LandingPage'
 
 class App extends Component {
   render() {
@@ -12,9 +12,6 @@ class App extends Component {
               <Route exact path="/" component={LandingPage} />
             </Switch>
         </Router>
-        <header className="App-header">
-          <SignUp />
-        </header>
       </div>
     );
   }
